@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backg">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/card_user_image_header"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/user_image_header"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/load"
+            android:scaleType="fitXY" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:layout_marginLeft="10dp"
+        android:text="@string/username"
+        android:textColor="#ffff"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/card_user_image_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="@string/name"
+        android:textColor="#ffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/header"
+        android:layout_below="@+id/card_user_image_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/githublink"
+        android:textColor="#ffff"
+        android:layout_marginLeft="10dp"
+        android:text="@string/github_profile_link"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/username" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+        android:textColor="#ffff"
+        android:text="@string/http"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/githublink" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        app:cardBackgroundColor="#0D47A1"
+        app:cardElevation="3dp"
+        android:elevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/abc_ic_menu_share_mtrl_alpha" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHARE"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

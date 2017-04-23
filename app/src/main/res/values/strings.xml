@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Andela Challenge</string>
+    <string name="internet">No internet connection, Please make sure your device is connected to the internet</string>
+    <string name="github_profile_link">Github Profile Link</string>
+    <string name="http">http://</string>
+    <string name="username">Username:</string>
+    <string name="name">Habeex</string>
+    <string name="user_name">Username</string>
+</resources>

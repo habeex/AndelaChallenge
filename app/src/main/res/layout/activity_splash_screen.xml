@@ -13,7 +13,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/aa"
+        android:src="@drawable/andela"
         android:layout_toRightOf="@+id/rot"
         android:layout_marginLeft="8dp"
         android:layout_centerInParent="true" />
@@ -22,7 +22,7 @@
         android:id="@+id/rot"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/alla"
+        android:src="@drawable/andela2"
         android:layout_marginRight="12dp"
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true" />

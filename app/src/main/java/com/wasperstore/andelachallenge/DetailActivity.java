@@ -2,21 +2,14 @@ package com.wasperstore.andelachallenge;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.Toolbar;
 import android.text.util.Linkify;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.wasperstore.andelachallenge.R;
 
 /**
  * Created by Habeex on 4/20/2017.
@@ -47,7 +40,7 @@ public class DetailActivity extends AppCompatActivity {
         Username.setText(username);
         Glide.with(this)
                 .load(avatarUrl)
-                .placeholder(R.drawable.load)
+                .placeholder(R.drawable.user_image)
                 .into(imageView);
 
         getSupportActionBar().setTitle("Profile Details");
